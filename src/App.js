@@ -2,7 +2,9 @@ import React from "react";
 import { Routes, Route } from 'react-router-dom';
 //components
 import Principal from "./pages/Principal";
-import Login from "./components/Login";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Admin from "./pages/Admin";
 function App() {
   return (
 
@@ -10,6 +12,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Principal/>}/>
       <Route path="/Login" element={<Login/>}/>
+      <Route path="/Register" element={<Register/>}/>
+      <Route path="/Admin" element={<Admin/>}/>
     </Routes>
   </div>
   );

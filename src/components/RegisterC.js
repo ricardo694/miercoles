@@ -1,7 +1,7 @@
-import React from 'react';
-import '../assests/css/Login.css';
-
-const Login = () => {
+import React from 'react'
+import '../assests/css/Register.css'
+import { Link } from 'react-router-dom'
+const Register = () => {
   return (
     <div className="login-container">
       <header className="login-header">
@@ -15,8 +15,13 @@ const Login = () => {
 
       <main className="login-form-container">
         <div className="login-form">
-          <h2 className="form-title">Iniciar Sesión</h2>
+          <h2 className="form-title">Registrate</h2>
           <p className="form-subtitle">Accede a tu biblioteca gaming</p>
+
+          <div className="input-group">
+            <span className="input-icon">✉</span>
+            <input type="text" placeholder="Nombre" />
+          </div>
 
           <div className="input-group">
             <span className="input-icon">✉</span>
@@ -29,16 +34,13 @@ const Login = () => {
             <span className="eye-icon">👁</span>
           </div>
 
-          <div className="options">
-            <label><input type="checkbox" /> Recordarme</label>
-            <a href="#" className="forgot-link">¿Olvidaste tu contraseña?</a>
-          </div>
+          <button className="login-button">Crear Cuenta</button>
 
-          <button className="login-button">Iniciar Sesión</button>
-
-          <div className="register">
-            <p>¿No tienes cuenta? <a href="#" className="register-link">Crear cuenta nueva</a></p>
-          </div>
+          <Link to='/Login'>
+            <div className="register">
+              <p className="register-link">¿Ya tienes cuenta?  Iniciar Sesión</p>
+            </div>
+          </Link>
 
           <div className="separator">
             <hr /><span>O continúa con</span><hr />
@@ -51,7 +53,7 @@ const Login = () => {
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Register

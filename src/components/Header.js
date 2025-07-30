@@ -6,6 +6,7 @@ import '../assests/css/Header.css'
 import Carrito from '../assests/img/carrito.png';
 import User from '../assests/img/user.png';
 import Logo from '../assests/img/logo.png';
+
 const Header = () => {
     return (
     <header className='header'>

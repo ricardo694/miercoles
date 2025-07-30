@@ -6,6 +6,7 @@ const GamePromo = () => {
   return (
     //container
     <div className="promo-container">
+
         <div className="promo-left">
             <span className="badge">🔥 Nuevo Lanzamiento</span>
             <h1><span className="title-highlight">Cyber Hunter</span> Elite</h1>

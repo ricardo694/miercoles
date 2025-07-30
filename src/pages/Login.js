@@ -1,8 +1,8 @@
-import Login from '../components/Login';
+import LoginC from '../components/LoginC';
 const Login = () => {
 return (
     <div>
-        <Login/>
+        <LoginC/>
     </div>
 )
 }

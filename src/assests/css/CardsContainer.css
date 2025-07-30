@@ -1,0 +1,57 @@
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #bbbbbb;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.card-price {
+  color: #a855f7;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button {
+  background-color: #cccccc;
+  color: #333333;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
