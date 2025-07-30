@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.oferta-container {
+  color: white;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0b1e;
+}
+
+.oferta-titulo {
+  font-size: 2rem;
+}
+
+.oferta-subtitulo {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.oferta-etiqueta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.oferta-limited {
+  background-color: rgb(219, 76, 164);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.oferta-card {
+  display: flex;
+  background: linear-gradient(to right, #000, #791b96);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.oferta-img {
+  width: 50%;
+  background: url('../img/game4.png') center center / cover no-repeat;
+  background-color: #111; /* backup si no hay imagen */
+  min-height: 300px;
+}
+
+.oferta-info {
+  padding: 1.5rem;
+  width: 50%;
+}
+
+.oferta-descuento {
+  background-color: rgb(219, 76, 164);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.oferta-precio {
+  margin: 1rem 0;
+}
+
+.precio-final {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: #ccc;
+  margin-left: 1rem;
+}
+
+.oferta-boton {
+  background-color: white;
+  color: black;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}

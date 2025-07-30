@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*container*/
+.destacados-container {
+    padding: 4rem 2rem;
+    background-color: #0d0b1e;
+    color: #fff;
+}
+/*encabezado*/
+.destacados-header {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.destacados-header h2 {
+  font-size: 2.8rem;
+  color: #cc57ff;
+}
+
+.destacados-header h2 strong {
+  color: #ff6d00;
+}
+
+.destacados-header p {
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.btn-epicas {
+  background: linear-gradient(to right, #ff5edf, #6e64ff);
+  border: none;
+  padding: 0.7rem 1.4rem;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px #ff5edf80;
+  transition: all 0.3s;
+}
+
+.btn-epicas:hover {
+  transform: scale(1.05);
+}
+
+.juegos-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.juego-card {
+  background: #1b172f;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #00000050;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.juego-card:hover {
+  transform: scale(1.02);
+}
+
+.imagen-juego {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.imagen-juego .descuento,
+.imagen-juego .categoria,
+.imagen-juego .rating {
+  position: absolute;
+  background-color: #ff0059;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.imagen-juego .descuento {
+  top: 10px;
+  left: 10px;
+  background-color: #ff004c;
+}
+
+.imagen-juego .categoria {
+  bottom: 10px;
+  left: 10px;
+  background-color: #651fff;
+}
+
+.imagen-juego .rating {
+  bottom: 10px;
+  right: 10px;
+  background-color: #ffc107;
+}
+
+.imagen-juego .favorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.info-juego {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-juego h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.info-juego p {
+  font-size: 0.9rem;
+  color: #ccc;
+  flex: 1;
+}
+
+.precios {
+  margin: 0.5rem 0;
+}
+
+.precio-nuevo {
+  font-weight: bold;
+  color: #f92672;
+  margin-right: 0.5rem;
+}
+
+.precio-viejo {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.btn-carrito {
+  background-color: #a020f0;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-carrito:hover {
+  background-color: #9c27b0;
+}

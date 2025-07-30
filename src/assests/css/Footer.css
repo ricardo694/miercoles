@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.footer-container {
+  background-color: #0b0715;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.logo .icon {
+  background: linear-gradient(45deg, #f43f5e, #8b5cf6);
+  border-radius: 10px;
+  padding: 0.4rem;
+  margin-right: 0.6rem;
+  font-weight: bold;
+}
+
+.logo .name {
+  color: #d946ef;
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+  color: #e879f9;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  color: #d946ef;
+}
+
+.newsletter input {
+  padding: 0.6rem;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background: linear-gradient(45deg, #f43f5e, #8b5cf6);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.join-note {
+  margin-top: 0.8rem;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.social-icons i {
+  margin-right: 0.7rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.social-icons i:hover {
+  color: #d946ef;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.legal-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.legal-links a:hover {
+  color: #d946ef;
+}

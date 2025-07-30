@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*colores en variables*/
+:root {
+    --color-primario: #a855f7;
+    --color-secundario: #ec4899;
+    --bg-dark: #0f0f1b;
+    --text-white: #fff;
+    --text-muted: #aaa;
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+/*contenedor */
+.promo-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  background-image: url('../img/gamer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Oscurecer imagen para que el texto resalte */
+  position: relative;
+  isolation: isolate;
+  color: white; 
+}
+
+.promo-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: -1;
+}
+/*promocion de la izquierda*/
+.promo-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding: 20px;
+}
+/* nuevo lanzamiento*/
+.badge {
+    background: var(--color-secundario);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.title-highlight {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.text-tech, .text-human {
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+
+.tags span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.price-box {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--color-primario);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.discount {
+  background: red;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary {
+  background: var(--color-primario);
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.promo-right {
+  flex: 1;
+  position: relative;
+}
+
+.game-image {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.badge-right, .achievement-card, .xp-card, .version {
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.badge-right {
+  top: 1rem;
+  right: 1rem;
+}
+
+.achievement-card {
+  top: 4rem;
+  left: 1rem;
+  background: var(--color-secundario);
+}
+
+.xp-card {
+  bottom: 5rem;
+  right: 1rem;
+  background: var(--color-primario);
+}
+
+.version {
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,80 @@
+.nexus-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('../img/gamer2.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 5%;
+  color: white;
+}
+
+.nexus-content {
+  max-width: 600px;
+}
+
+.nexus-tag {
+  background-color: #ff5722;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.nexus-title {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+}
+
+.nexus-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.nexus-price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.nexus-price-value {
+  color: #00c853;
+  font-weight: bold;
+}
+
+.nexus-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-free-trial {
+  background-color: #ca2398;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-learn-more {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-learn-more:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-free-trial:hover {
+  background-color: #00b140;
+}

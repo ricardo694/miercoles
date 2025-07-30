@@ -1,0 +1,37 @@
+.beneficios-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0d0318;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.beneficio-card {
+  background-color: #18082b;
+  border-radius: 10px;
+  width: 260px;
+  margin: 10px;
+  text-align: center;
+  padding: 25px 20px;
+  color: white;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.beneficio-card:hover {
+  transform: translateY(-5px);
+}
+
+.icono {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  background-color: white;
+  color: #5c0aff;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
