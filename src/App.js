@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Admin from "./pages/Admin";
 import CarritoPage from "./components/CarritoPage";
+import User from "./pages/User";
 function App() {
   return (
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/Register" element={<Register/>}/>
       <Route path="/Admin" element={<Admin/>}/>
       <Route path="/carrito" element={<CarritoPage/>}/>
+      <Route path="/User" element={<User/>}/>
     </Routes>
   </div>
   );

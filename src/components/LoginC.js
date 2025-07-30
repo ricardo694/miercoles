@@ -8,7 +8,7 @@ const Login = () => {
       <header className="login-header">
         <a href="/" className="back-link">← Volver al Inicio</a>
         <div className="logo-container">
-          <div className="logo-icon">⚡</div>
+          <div className="logo-icon"></div>
           <h1 className="logo-text">NEXUS GAMES</h1>
         </div>
         <p className="subtitle">Tu plataforma gaming preferida</p>
@@ -20,14 +20,14 @@ const Login = () => {
           <p className="form-subtitle">Accede a tu biblioteca gaming</p>
 
           <div className="input-group">
-            <span className="input-icon">✉</span>
+            <span className="input-icon"></span>
             <input type="email" placeholder="Email" />
           </div>
 
           <div className="input-group">
-            <span className="input-icon">🔒</span>
+            <span className="input-icon"></span>
             <input type="password" placeholder="Contraseña" />
-            <span className="eye-icon">👁</span>
+            <span className="eye-icon"></span>
           </div>
 
           <div className="options">

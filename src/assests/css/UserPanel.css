@@ -1,0 +1,34 @@
+.bienvenida-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0b0b1e 0%, #3b0a64 100%);
+  padding: 10px 20px;
+  color: white;
+  border-bottom: 1px solid #452a73;
+  height: 60px;
+}
+
+.bienvenida-left {
+  display: flex;
+  align-items: center;
+}
+
+.icono-juego {
+  color: #d58af8;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.texto-bienvenida {
+  color: #e86be5;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bienvenida-right {
+  font-size: 0.9rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
