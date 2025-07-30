@@ -1,0 +1,86 @@
+.carrito-container {
+  padding: 2rem;
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.carrito-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.carrito-vacio {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.item-carrito {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-nombre {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.item-precio {
+  font-size: 0.95rem;
+  color: #00e676;
+}
+
+.item-imagen {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.btn-eliminar {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+  background-color: #e53935;
+}
+
+.btn-vaciar {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vaciar:hover {
+  background-color: #fb8c00;
+}

@@ -1,0 +1,84 @@
+.carrito-page {
+  padding: 2rem;
+  color: white;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.carrito-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carrito-item {
+  display: flex;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carrito-item img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.carrito-item .info {
+  flex: 1;
+}
+
+.carrito-item button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formulario-pago {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.formulario-pago h3 {
+  margin-bottom: 1rem;
+}
+
+.formulario-pago form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-pago label {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.formulario-pago input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.total-carrito {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #4caf50;
+}
+
+.formulario-pago button {
+  padding: 0.7rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}

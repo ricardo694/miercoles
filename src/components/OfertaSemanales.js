@@ -1,14 +1,10 @@
-// OfertasSemanales.js
 import React from 'react';
-//css
 import '../assests/css/OfertaSemanales.css';
-//imgs
+import { useCart } from '../context/CartContext'; 
 import Game1 from '../assests/img/game1.png';
 import Game2 from '../assests/img/game2.png';
 import Game3 from '../assests/img/game3.png';
 import Game4 from '../assests/img/game4.png';
-
-
 
 const juegos = [
   {
@@ -29,7 +25,7 @@ const juegos = [
     precioDescuento: '$12.99',
     precioOriginal: '$39.99',
     rating: 4.8,
-    imagen: Game2, 
+    imagen: Game2
   },
   {
     id: 3,
@@ -39,7 +35,7 @@ const juegos = [
     precioDescuento: '$9.99',
     precioOriginal: '$29.99',
     rating: 4.8,
-    imagen: Game3,
+    imagen: Game3
   },
   {
     id: 4,
@@ -50,10 +46,12 @@ const juegos = [
     precioOriginal: '$19.99',
     rating: 4.8,
     imagen: Game4
-  },
+  }
 ];
 
 const OfertasSemanales = () => {
+  const { addToCart } = useCart(); 
+
   return (
     <section className="ofertas-semanales">
       <div className="encabezado">
@@ -65,16 +63,10 @@ const OfertasSemanales = () => {
           <div className="card-juego" key={juego.id}>
             <div className="imagen-contenedor">
               <span className="descuento">{`-${juego.descuento}`}</span>
-              {juego.imagen ? (
-                <img src={juego.imagen} alt={juego.nombre} />
-              ) : (
-                <div className="imagen-placeholder">
-                  <i className="fas fa-image"></i>
-                </div>
-              )}
+              <img src={juego.imagen} alt={juego.nombre} />
               <div className="info-genero">
                 <span className="genero">{juego.genero}</span>
-                <span className="rating"> {juego.rating}</span>
+                <span className="rating">{juego.rating}</span>
               </div>
               {juego.tieneTrailer && (
                 <button className="btn-trailer">🎬 Tráiler</button>
@@ -87,7 +79,19 @@ const OfertasSemanales = () => {
                 <span className="precio-descuento">{juego.precioDescuento}</span>
                 <span className="precio-original">{juego.precioOriginal}</span>
               </div>
-              <button className="btn-carrito"> Agregar al Carrito</button>
+              <button
+                className="btn-carrito"
+                onClick={() =>
+                  addToCart({
+                    id: juego.id,
+                    nombre: juego.nombre,
+                    precio: parseFloat(juego.precioDescuento.replace('$', '')),
+                    imagen: juego.imagen
+                  })
+                }
+              >
+                Agregar al Carrito
+              </button>
             </div>
           </div>
         ))}
